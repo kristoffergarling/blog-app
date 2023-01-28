@@ -1,4 +1,4 @@
-<h1>>Blog App</h1>
+<h1>Blog App</h1>
 <h3>Overview</h3>
 <span>Built using: TypeScript, Firebase and Tailwind</span>
 
@@ -8,6 +8,7 @@ Approaches: 8-point grid and Mobile-first
 
 My own notes before writing the SRS
 User registration and login: Users should be able to register and log in to the application using Firebase Authentication.
+
 Blog post creation and editing: Users should be able to create, edit, and delete their own blog posts. Posts should include a title, body text, and image. Posts should be stored in Firebase Firestore.
 Blog post display: The application should display a list of all blog posts, with the most recent post at the top. Each post should include the title, a preview of the body text, and the author's name.
 Blog post detail view: Users should be able to click on a post to view it in full, including the title, body text, image, and author's name.
