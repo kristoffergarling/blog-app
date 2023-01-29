@@ -1,6 +1,6 @@
 <h1>Blog App</h1>
 <h3>Overview</h3>
-<span>Built using: TypeScript, React, Next.js, Firebase and Tailwind</span>
+<span>Built using: TypeScript, React, Next.js, Firebase and Tailwind.</span>
 
 <h4>Approaches</h4>
 <ul>
