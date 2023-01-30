@@ -1,19 +1,35 @@
-const BlogCard = () => {
+import Author from "./BlogCard/Author";
+import ThumbIcon from "./BlogCard/ThumbIcon";
+
+interface BlogCardProps {
+  title: string;
+  date: string;
+  imageSource: string;
+}
+
+const BlogCard: React.FC<BlogCardProps> = ({ title, date, imageSource }) => {
   return (
-    <div>
+    <article className="pt-4 pb-4">
+      <figure>
+        <Author />
+        <img
+          className="shadow-md rounded w-full h-32 object-cover"
+          src={imageSource}
+          alt="Blog Image"
+        />
+      </figure>
       <div>
-        <img src="https://picsum.photos/200/300" alt="Blog Image" />
+        <div className="flex justify-between pt-2">
+          <span className="text-xs text-secondary">{date}</span>
+          <div className="flex">
+            <ThumbIcon thumbUp={true} />
+            <ThumbIcon thumbUp={false} />
+          </div>
+        </div>
+
+        <h2 className="font-bold text-xl">{title}</h2>
       </div>
-      <div>
-        <span>March 05, 2021</span>
-        <h2>TypeScript is a programming language</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
-          officia porro explicabo necessitatibus ut quaerat non amet, illum iure
-          dolorem!
-        </p>
-      </div>
-    </div>
+    </article>
   );
 };
 export default BlogCard;

@@ -12,6 +12,9 @@ module.exports = {
         secondary: "#4c5460",
         accent: "#e4e6ec",
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
