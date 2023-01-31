@@ -1,3 +1,5 @@
+import SignUp from "./SignUp";
+
 const Navbar = () => {
   return (
     <nav className="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b">
@@ -13,12 +15,7 @@ const Navbar = () => {
           </span>
         </a>
         <div className="flex md:order-2">
-          <button
-            type="button"
-            className="text-secondary bg-primary hover:bg-accent   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 "
-          >
-            Log In
-          </button>
+          <SignUp />
         </div>
       </div>
     </nav>
