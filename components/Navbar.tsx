@@ -1,4 +1,4 @@
-import SignUp from "./SignUp";
+import SignUp from "./Auth/AuthModal";
 
 const Navbar = () => {
   return (
