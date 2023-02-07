@@ -16,15 +16,15 @@ const AuthModal: React.FC = () => {
       <button
         onClick={() => setShowModal(true)}
         type="button"
-        className="text-secondary bg-primary hover:bg-accent   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 "
+        className="text-accent bg-primary font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 "
       >
-        Log In
+        Log On
       </button>
       {showModal ? (
         <>
           <div
             onClick={() => setShowModal(false)}
-            className="modal justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+            className="animate__animated animate__fadeInDown animate__faster justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
             <div
               onClick={(e) => e.stopPropagation()}

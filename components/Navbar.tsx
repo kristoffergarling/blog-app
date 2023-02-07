@@ -1,4 +1,4 @@
-import SignUp from "./Auth/AuthModal";
+import AuthModal from "./Auth/AuthModal";
 
 const Navbar = () => {
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
           </span>
         </a>
         <div className="flex md:order-2">
-          <SignUp />
+          <AuthModal />
         </div>
       </div>
     </nav>
