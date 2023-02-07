@@ -13,7 +13,7 @@ module.exports = {
         accent: "#e4e6ec",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        serif: ["ui-serif", "Georgia"],
       },
     },
   },

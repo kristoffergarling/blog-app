@@ -14,14 +14,6 @@ const SignUpForm: React.FC<FormProps> = ({ setShowSignUp }) => {
       <div className="">
         <input
           className="shadow appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-xs"
-          id="username"
-          type="text"
-          placeholder="Username"
-        />
-      </div>
-      <div className="">
-        <input
-          className="shadow appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-xs"
           id="password"
           type="password"
           placeholder="Password"
@@ -32,12 +24,12 @@ const SignUpForm: React.FC<FormProps> = ({ setShowSignUp }) => {
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 text-sm rounded focus:outline-none focus:shadow-outline w-full mb-2"
         type="button"
       >
-        Sign Up
+        Sign In
       </button>
       <p className="text-sm">
-        Already registered?{" "}
-        <span className="cursor-pointer" onClick={() => setShowSignUp(false)}>
-          Sign In
+        Not registered yet?{" "}
+        <span className="cursor-pointer" onClick={() => setShowSignUp(true)}>
+          Sign Up
         </span>
       </p>
     </form>

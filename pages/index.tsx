@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Navbar from "../components/Navbar";
-import BlogCard from "../components/BlogCard";
+import BlogCard from "../components/BlogCard/BlogCard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className="container pt-24 pl-8 pr-8">
-        <h1 className="font-bold text text-4xl mb-8">Frontend Blog</h1>
+        <h1 className="font-medium text-4xl mb-8">Frontend Blog</h1>
         <BlogCard
           title="This is an article about software engineering"
           date="05 March, 2022"

@@ -1,5 +1,5 @@
-import Author from "./BlogCard/Author";
-import ThumbIcon from "./BlogCard/ThumbIcon";
+import Author from "./Author";
+import { ThumbIcon } from "../Icons/Icons";
 
 interface BlogCardProps {
   title: string;
@@ -9,7 +9,7 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ title, date, imageSource }) => {
   return (
-    <article className="pt-4 pb-4">
+    <article className="pt-4 pb-4 max-w-md">
       <figure>
         <Author />
         <img
@@ -20,14 +20,14 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, date, imageSource }) => {
       </figure>
       <div>
         <div className="flex justify-between pt-2">
-          <span className="text-xs text-secondary">{date}</span>
+          <span className="text-xs text-secondary font-light">{date}</span>
           <div className="flex">
             <ThumbIcon thumbUp={true} />
             <ThumbIcon thumbUp={false} />
           </div>
         </div>
 
-        <h2 className="font-bold text-xl">{title}</h2>
+        <h2 className="text-xl font-normal">{title}</h2>
       </div>
     </article>
   );
