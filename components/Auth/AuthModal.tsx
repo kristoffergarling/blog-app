@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SignUpForm from "./SignUpForm";
 import SignInForm from "./SignInForm";
-import { X } from "../Icons/Icons";
+import { XIcon } from "../Icons/Icons";
 
 export interface FormProps {
   setShowSignUp: (value: boolean) => void;
@@ -31,7 +31,7 @@ const AuthModal: React.FC = () => {
               className="relative mx-auto w-full h-full lg:w-2/4 xl:w-2/6 lg:h-2/3 lg: bg-accent"
             >
               <div className="border-0 relative flex flex-col justify-center items-center w-full outline-none focus:outline-none ">
-                <X
+                <XIcon
                   className="w-10 h-10 pt-3 pr-3 absolute right-0 top-0 cursor-pointer text-secondary hover:text-primary"
                   onClick={() => setShowModal(false)}
                 />
