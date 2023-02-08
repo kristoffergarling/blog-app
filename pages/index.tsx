@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="container pt-24 pl-8 pr-8">
+      <main className="container mx-auto xl:max-w-6xl pt-24">
         <h1 className="font-medium text-4xl mb-8">Frontend Blog</h1>
         <BlogCard
           title="This is an article about software engineering"
@@ -33,7 +33,7 @@ export default function Home() {
           date="10 March, 2022"
           imageSource="https://images.unsplash.com/photo-1620313617489-902a1eb0449b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGJhYmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
         />
-      </div>
+      </main>
     </>
   );
 }

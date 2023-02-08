@@ -28,7 +28,7 @@ const AuthModal: React.FC = () => {
           >
             <div
               onClick={(e) => e.stopPropagation()}
-              className="relative mx-auto w-full h-full lg:w-2/4 lg:h-2/3 lg: bg-accent"
+              className="relative mx-auto w-full h-full lg:w-2/4 xl:w-2/6 lg:h-2/3 lg: bg-accent"
             >
               <div className="border-0 relative flex flex-col justify-center items-center w-full outline-none focus:outline-none ">
                 <X
