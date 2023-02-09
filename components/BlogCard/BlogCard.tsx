@@ -18,7 +18,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, date, imageSource }) => {
           </div>
         </div>
         <img
-          className="shadow-md rounded w-full h-32 object-cover"
+          className="shadow-md rounded w-full h-32 object-cover hover:cursor-pointer"
           src={imageSource}
           alt="Blog Image"
         />
@@ -31,8 +31,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, date, imageSource }) => {
             <ThumbIcon thumbUp={false} />
           </div>
         </div>
-
-        <h2 className="text-xl font-normal">{title}</h2>
+        <h2 className="text-xl font-normal hover:cursor-pointer">{title}</h2>
       </div>
     </article>
   );
